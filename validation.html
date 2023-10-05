@@ -1,0 +1,115 @@
+
+     <html>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <head><title>validation</title>
+    <style>
+      * {box-sizing: border-box}
+
+.header{
+  height: 20%;
+  background-color: rgb(150, 65, 4);
+  text-align: center;
+  font-size: 30px;
+}
+.header h1{
+  padding-top: 40px;
+}
+.nav-links{
+  text-align: center;
+  color: green;
+  font-weight: 600;
+  padding: 10px;
+  background-color: rgb(254, 129, 39);
+}
+.content{
+  background-color: rgb(254, 129, 39);
+}
+.nav-links li a{
+text-decoration: none;
+}
+.nav-links li{
+  display: inline;
+  align-items: center;
+  padding: 10px;
+}
+.myform{
+    background-color: rgb(254, 129, 39);
+    height: 240px;
+    padding-left: 20px;
+}
+.submit{
+    
+    margin: 10px;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(150, 65, 4);
+  color: #000;
+  text-align: center;
+}
+.footer1{
+  display:inline-block;
+  padding: 0px 20px;
+}
+.footer1 p{
+  padding: 2px 2px;
+}
+
+    </style>
+    </head>
+    <body>
+        <div class="header">
+        <h1>Panari hotel</h1>
+        </div>
+        <nav>
+          <div class="content">
+            <div class="nav-links">
+            <ul>
+                 <li><a href="index.html">IFRAME</a></li>
+                 <li><a href="iframe.html">IFRAME</a></li>
+                 <li><a href="validation.html">VALIDATION</a></li>
+                 <li><a href="alert.html">ALERT</a></li>    
+            </ul>
+            </div>  
+        </nav>
+        <script>
+          function validateForm() {
+            let x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+              alert("Name must be filled out");
+              return false;
+            }
+          }
+          </script>
+ 
+ <form class="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post"> 
+            Name:<br>
+             <input type="text" name="name"><br/>  
+            Password:<br>
+             <input type="password" name="password"><br/><br>  
+            <input type="submit" value="register">  
+            </form> 
+          </div>
+    <div class="footer">
+        <div class="footer1">
+        <h2>About Us</h2>
+    <p>Contacts</p>
+    <p>Blog</p>
+    <p>Our Meals</p>
+    </div>
+    <div class="footer1">
+    <h2>Contact Us</h2>
+    <p>Facebook</p>
+    <p>Twitter</p>
+    <p>Instagram</p>
+      </div>
+    </div>
+    </body>
+</html>
+
+
+       

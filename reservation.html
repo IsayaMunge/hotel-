@@ -1,0 +1,184 @@
+
+        <html>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <head><title>welcome</title>
+    <style>
+        * {box-sizing: border-box}
+
+.header{
+  height: 20%;
+  background-color: rgb(150, 65, 4);
+  text-align: center;
+  font-size: 30px;
+}
+.header h1{
+  padding-top: 40px;
+}
+.content{
+  background-color: rgb(254, 129, 39);
+}
+.nav-links{
+  text-align: center;
+  color: green;
+  font-weight: 600;
+  padding: 10px;
+}
+.nav-links li a{
+text-decoration: none;
+}
+.nav-links li{
+  display: inline;
+  align-items: center;
+  padding: 10px;
+}
+/* Add padding to containers */
+.container {
+  padding: 10px 10px;
+  width: 80%;
+  text-align: center;
+  margin-left: 100px;
+  border: 2px solid #828282;
+  background-color: rgb(254, 129, 39);
+  
+}
+.form{
+  text-align: left;
+  margin: 0;
+}
+.form1{
+  display:inline;
+ 
+}
+.email input[type=text]{
+  width: 90%;
+}
+/* Full-width input fields */
+input[type=text], input[type=number], input[type=date], input[type=time] {
+  width: 35%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=number], input[type=date], input[type=time]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 2px solid #b3aeae;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.submit-btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  opacity: 0.9;
+}
+
+.submit-btn:hover {
+  opacity:1;
+}
+.btn{
+  align-items: center;
+}
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(150, 65, 4);
+  color: #000;
+  text-align: center;
+}
+.footer1{
+  display:inline-block;
+  padding: 0px 20px;
+}
+.footer1 p{
+  padding: 2px 2px;
+}
+
+    </style>
+    </head>
+    <body>
+        <div class="header">
+        <h1>Panari hotel</h1>
+        </div>
+        <div class="content">
+        <nav>
+            <div class="nav-links">
+            <ul>
+                <li><a href="index.html">HOME</a></li> 
+                 <li><a href="iframe.html">IFRAME</a></li>
+                 <li><a href="validation.html">VALIDATION</a></li>
+                 <li><a href="alert.html">ALERT</a></li>    
+            </ul>
+            </div>  
+        </nav>
+        
+            <div class="container">
+                <h1>Hotel Reservation Form</h1>
+                <p>Please complete the form below</p>
+                <p>Your registration will be verified prior to your arrival</p>
+                <hr>
+                <div class="form">
+                <form>
+                    <div class="form1">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname">
+                    <label1 for="lname">Last name:</label1>
+                    <input type="text" id="lname" name="lname">
+                    </div>
+                    <div class="email">
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email"><br>
+                    </div>
+                    <label for="phone">Phone:</label><br>
+                    <input type="number" id="phone" name="phone"><br>
+                    
+                    <label for="date">Arrival date & Time:</label><br>
+                    <input type="date" id="date" name="date">
+                    <input type="time" id="time" name="time"><br>
+        
+                    <label for="date">Departure date & Time:</label><br>
+                    <input type="date" id="date" name="date">
+                    <input type="time" id="time" name="time"><br>
+        
+                    <label for="adults">No of Adults:</label><br>
+                    <input type="number" id="adults" name="adults">
+                    <label for="kids">No of Kids:</label>
+                    <input type="number" id="kids" name="kids"><br>
+                    <div class="btn">
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </div>
+                  </form>
+                  </div>
+                  </div>
+                  </div>
+    <div class="footer">
+        <div class="footer1">
+        <h2>About Us</h2>
+    <p>Contacts</p>
+    <p>Blog</p>
+    <p>Our Meals</p>
+    </div>
+    <div class="footer1">
+    <h2>Contact Us</h2>
+    <p>Facebook</p>
+    <p>Twitter</p>
+    <p>Instagram</p>
+      </div>
+    </div>
+    </body>
+</html>
